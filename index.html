@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Profesional</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400&display=swap');
+
+        /* Reset body */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+        }
+
+        /* Animasi fade-in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Container utama */
+        .container {
+            max-width: 400px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            border-top: 5px solid #2c3e50;
+            transform: scale(0.95);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Efek hover container */
+        .container:hover {
+            transform: scale(1);
+        }
+
+        /* Foto profil */
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+            margin-top: -55px;
+            background-color: white;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Efek hover pada foto */
+        .profile-img:hover {
+            transform: scale(1.08);
+        }
+
+        /* Judul */
+        h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 24px;
+            margin: 10px 0 5px;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
+        /* Subjudul */
+        .subtitle {
+            font-size: 15px;
+            color: #4a4a4a;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        /* Deskripsi */
+        .description {
+            font-size: 14px;
+            color: #555;
+            margin: 5px 20px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Tombol */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 500;
+            border: none;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Animasi hover tombol */
+        .btn:hover {
+            background: #1f2a35;
+            transform: translateY(-3px);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQFUne6xnnPJhQ/profile-displayphoto-shrink_800_800/B4EZRU.ih0GYAc-/0/1736592469559?e=1746662400&v=beta&t=htVKW5GqkD79eFSWp6Hviu2n5FQqeNvcuk6mklBAtaE" 
+            alt="Foto Profil" class="profile-img">
+        <h1>Syayyidatur Rosyida</h1>
+        <p class="subtitle">Web Developer | Photographer | Designer</p>
+        <p class="description">Saya seorang pengembang dan desainer kreatif yang selalu berusaha memberikan yang terbaik. Menciptakan karya-karya yang tidak hanya fungsional, tetapi juga estetik, adalah motivasi saya setiap hari.</p>
+        <a href="https://www.instagram.com/rosy_arkocean/?hl=en" class="btn" target="_blank">Instagram</a>
+        <a href="https://lynk.id/mochi_to" class="btn" target="_blank">Lynk</a>
+        <a href="https://www.linkedin.com/in/syayyidatur-rosyida-427057301/" class="btn" target="_blank">LinkedIn</a>
+    </div>
+</body>
+</html>
